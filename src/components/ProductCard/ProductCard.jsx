@@ -40,7 +40,6 @@ const ProductCard = ({ image, productName, click, id }) => {
           fontWeight: "bolder",
           width: "100%",
           pt: { md: "3px" },
-          // mt: { md: 1 },
           backgroundColor: "#f7c5cc",
           textAlign: "center",
           height: { xs: "40px", md: 0 },
