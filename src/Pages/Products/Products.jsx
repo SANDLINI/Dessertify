@@ -35,12 +35,10 @@ const Products = () => {
   }, [getData, filterProductOnBtnClick, changeBtnColorOnClick]);
 
   useEffect(() => {
-
     return () => {
       filterProductOnBtnClick("all");
       changeBtnColorOnClick("all");
     };
-    
   }, []);
 
   const filterProductBox = {
@@ -79,7 +77,6 @@ const Products = () => {
       <Box>
         <NewsLetter
           heading="Search for your favorite desserts..."
-          btnText="Search"
           placeholder="Search..."
           image={productsHeroImage}
           onchange={onChangeHandler}

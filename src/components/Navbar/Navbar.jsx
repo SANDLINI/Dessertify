@@ -1,12 +1,19 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
-import { AppBar, Typography } from "@mui/material";
+import { NavLink, Navigate, useNavigate } from "react-router-dom";
+import { AppBar, Typography, Box } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import { useSelector } from "react-redux";
+import logo from "../../../public/logo.png";
 
 const Navbar = () => {
   const itemQuantity = useSelector((state) => state.cart.cartItems);
+
+  const navigate = useNavigate();
+
+  const navToHome = () => {
+    navigate("/");
+  };
 
   return (
     <AppBar sx={{ background: "transparent", position: "static" }}>
@@ -18,6 +25,22 @@ const Navbar = () => {
           gap: { xs: "1px", sm: "20px" },
         }}
       >
+        <Box
+          onClick={navToHome}
+          sx={{
+            width: "150px",
+            height: "50px",
+            position: "absolute",
+            left: "5%",
+            cursor: "pointer",
+          }}
+        >
+          <img
+            src={logo}
+            alt="logo"
+            style={{ width: "100%", height: "100%", borderRadius: "5px" }}
+          />
+        </Box>
         <NavLink
           className={({ isActive }) =>
             isActive ? styles.active : styles.notActive

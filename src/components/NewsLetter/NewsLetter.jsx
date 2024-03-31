@@ -1,7 +1,14 @@
 import React from "react";
 import styles from "./NewsLetter.module.css";
 import { Box, Typography, Button } from "@mui/material";
-const NewsLetter = ({ heading, btnText, placeholder, image, onchange }) => {
+const NewsLetter = ({
+  heading,
+  btnText,
+  placeholder,
+  image,
+  display,
+  onchange,
+}) => {
   return (
     <Box
       sx={{
@@ -13,7 +20,12 @@ const NewsLetter = ({ heading, btnText, placeholder, image, onchange }) => {
       }}
     >
       <Box sx={{ width: "100%", height: "500px", m: "auto" }}>
-        <img src={image} alt="Desserts Image" loading="lazy" className={styles.image} />
+        <img
+          src={image}
+          alt="Desserts Image"
+          loading="lazy"
+          className={styles.image}
+        />
       </Box>
       <Box
         className={styles.newsLetter}
@@ -31,7 +43,6 @@ const NewsLetter = ({ heading, btnText, placeholder, image, onchange }) => {
           sx={{
             width: { xs: "100%" },
             m: "auto",
-            display: btnText ? "block" : "none",
           }}
         >
           <input
@@ -43,10 +54,14 @@ const NewsLetter = ({ heading, btnText, placeholder, image, onchange }) => {
           />
           <Button
             sx={{
+              width: "30%",
               mt: 1,
+              mx: "auto",
               bgcolor: "#cc313d",
               fontWeight: "bold",
               "&:hover": { bgcolor: "#f7c5cc", color: "black" },
+              display: btnText ? "block" : "none",
+              textAlign: "center",
             }}
             variant="contained"
           >
