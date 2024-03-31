@@ -42,7 +42,10 @@ const NewsLetter = ({
         </Typography>
         <Box
           sx={{
-            width: { xs: "100%" },
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
             m: "auto",
           }}
         >
@@ -58,6 +61,7 @@ const NewsLetter = ({
           <Button
             sx={{
               mt: 1,
+              textAlign: "center",
               display: btnText ? "block" : "none",
               bgcolor: "#cc313d",
               fontWeight: "bold",
