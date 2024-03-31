@@ -80,6 +80,7 @@ const Products = () => {
           placeholder="Search..."
           image={productsHeroImage}
           onchange={onChangeHandler}
+          inputVisible = {true}
         />
       </Box>
       <Box sx={filterProductBox}>

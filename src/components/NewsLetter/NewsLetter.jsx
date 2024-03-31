@@ -6,6 +6,7 @@ const NewsLetter = ({
   btnText,
   placeholder,
   image,
+  inputVisible,
   display,
   onchange,
 }) => {
@@ -45,23 +46,22 @@ const NewsLetter = ({
             m: "auto",
           }}
         >
-          <input
-            type="text"
-            onChange={(e) => {
-              onchange(e);
-            }}
-            placeholder={placeholder}
-          />
+          <Box sx={{ display: inputVisible ? "block" : "none" }}>
+            <input
+              type="text"
+              onChange={(e) => {
+                onchange(e);
+              }}
+              placeholder={placeholder}
+            />
+          </Box>
           <Button
             sx={{
-              width: "30%",
               mt: 1,
-              mx: "auto",
+              display: btnText ? "block" : "none",
               bgcolor: "#cc313d",
               fontWeight: "bold",
               "&:hover": { bgcolor: "#f7c5cc", color: "black" },
-              display: btnText ? "block" : "none",
-              textAlign: "center",
             }}
             variant="contained"
           >
