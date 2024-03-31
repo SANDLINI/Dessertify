@@ -26,17 +26,26 @@ const ProductCard = ({ image, productName, click, id }) => {
         cursor: "pointer",
       }}
     >
-      <img src={image} alt="Product image" loading="lazy" className={styles.image} />
+      <img
+        src={image}
+        alt="Product image"
+        loading="lazy"
+        className={styles.image}
+      />
       <Typography
         className={styles.cardContent}
         sx={{
           position: "absolute",
-          bottom: "0px",
+          bottom: { xs: "-45px", md: 0 },
           fontWeight: "bolder",
           width: "100%",
+          pt: { md: "3px" },
+          // mt: { md: 1 },
+          backgroundColor: "#f7c5cc",
           textAlign: "center",
-          height: 0,
+          height: { xs: "40px", md: 0 },
           overflow: "hidden",
+          fontSize: { xs: "12px", md: "15px" },
         }}
       >
         {productName}

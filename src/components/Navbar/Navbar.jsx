@@ -33,6 +33,7 @@ const Navbar = () => {
             position: "absolute",
             left: "5%",
             cursor: "pointer",
+            display: { xs: "none", md: "block" },
           }}
         >
           <img
