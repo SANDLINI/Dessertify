@@ -1,0 +1,16 @@
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.Card:hover .cardContent {
+  height: 30px;
+  background-color: #cc313d;
+  color: white;
+}
+
+.Card:hover .image {
+  filter: brightness(70%);
+}
