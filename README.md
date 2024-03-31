@@ -9,9 +9,9 @@ A one stop shop for all your sweet cravings. We provide all kinds of Desserts. I
 https://dessertify.netlify.app
 
 
-<!-- <img src = './public/HomePage.png'> -->
+<img src = './public/HomePage.png'>
 
-<img src = './HomePage.png' />
+<!-- <img src = './HomePage.png' /> -->
 
 
 ## Features
