@@ -34,13 +34,6 @@ const Products = () => {
     changeBtnColorOnClick(getData);
   }, [getData, filterProductOnBtnClick, changeBtnColorOnClick]);
 
-  useEffect(() => {
-    return () => {
-      filterProductOnBtnClick("all");
-      changeBtnColorOnClick("all");
-    };
-  }, []);
-
   const filterProductBox = {
     display: "flex",
     justifyContent: "space-evenly",
@@ -80,7 +73,7 @@ const Products = () => {
           placeholder="Search..."
           image={productsHeroImage}
           onchange={onChangeHandler}
-          inputVisible = {true}
+          inputVisible={true}
         />
       </Box>
       <Box sx={filterProductBox}>
@@ -181,7 +174,7 @@ const Products = () => {
             alignItems: "center",
             width: "90%",
             mx: "auto",
-            gap: "10px",
+            gap: "50px",
           }}
         >
           {products.map((items) => {

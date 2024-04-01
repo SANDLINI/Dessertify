@@ -35,7 +35,7 @@ const ProductCard = ({ image, productName, click, id }) => {
       <Typography
         className={styles.cardContent}
         sx={{
-          position: "absolute",
+          position: { md: "absolute" },
           bottom: { xs: "-45px", md: 0 },
           fontWeight: "bolder",
           width: "100%",
