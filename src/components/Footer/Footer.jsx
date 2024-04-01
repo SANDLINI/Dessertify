@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <Box>
+    <Box sx={{ position: "absolute", width: "100%" }}>
       <Box
         sx={{
           textAlign: "center",

@@ -43,13 +43,15 @@ const NewsLetter = ({
         <Box
           sx={{
             display: "flex",
+            flexDirection: "column",
+            gap: "10px",
             alignItems: "center",
             justifyContent: "center",
             width: "100%",
             m: "auto",
           }}
         >
-          <Box sx={{ display: inputVisible ? "block" : "none" }}>
+          <Box sx={{ display: inputVisible ? "block" : "none", mr: "10px" }}>
             <input
               type="text"
               onChange={(e) => {
@@ -58,19 +60,22 @@ const NewsLetter = ({
               placeholder={placeholder}
             />
           </Box>
-          <Button
-            sx={{
-              mt: 1,
-              textAlign: "center",
-              display: btnText ? "block" : "none",
-              bgcolor: "#cc313d",
-              fontWeight: "bold",
-              "&:hover": { bgcolor: "#f7c5cc", color: "black" },
-            }}
-            variant="contained"
-          >
-            {btnText}
-          </Button>
+          <Box>
+            <Button
+              sx={{
+                mt: 1,
+                // fontSize: "18px",
+                textAlign: "center",
+                display: btnText ? "block" : "none",
+                bgcolor: "#cc313d",
+                fontWeight: "bold",
+                "&:hover": { bgcolor: "#f7c5cc", color: "black" },
+              }}
+              variant="contained"
+            >
+              {btnText}
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Box>

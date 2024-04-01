@@ -6,7 +6,6 @@ import Popular from "../../components/Popular/Popular";
 import { Box } from "@mui/material";
 import Categories from "../../components/Categories/Categories";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
-import Footer from "../../components/Footer/Footer";
 import dessertsImage from "/desserts.jpg";
 const Home = () => {
   return (
@@ -42,10 +41,8 @@ const Home = () => {
           btnText="Subscribe"
           placeholder="Enter your email"
           image={dessertsImage}
+          inputVisible={true}
         />
-      </Box>
-      <Box>
-        <Footer />
       </Box>
     </Box>
   );

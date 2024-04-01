@@ -5,7 +5,6 @@ import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import image from "/AboutUsHeroImage.jpg";
 import teams from "/teams.jpg";
 import teams2 from "/teams2.jpg";
-import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   return (
@@ -89,7 +88,12 @@ const About = () => {
               height: { xs: "auto", sm: "auto", md: "70%" },
             }}
           >
-            <img src={teams2} alt="Teams" loading="lazy" className={styles.image} />
+            <img
+              src={teams2}
+              alt="Teams"
+              loading="lazy"
+              className={styles.image}
+            />
           </Box>
           <Box sx={{ width: { xs: "98%", sm: "70%", md: "45%" }, mb: "150px" }}>
             <Typography variant="h4">
@@ -119,7 +123,6 @@ const About = () => {
           </Box>
         </Box>
       </Box>
-      <Footer />
     </Box>
   );
 };
