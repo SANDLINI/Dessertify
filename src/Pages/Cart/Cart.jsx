@@ -34,6 +34,7 @@ const Cart = () => {
     <Box
       sx={{
         width: "100%",
+        minHeight: "50vh",
         m: "auto",
         display: "flex",
         flexWrap: { xs: "nowrap" },
