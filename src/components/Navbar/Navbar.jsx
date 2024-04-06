@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import { NavLink, Navigate, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AppBar, Typography, Box } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import { useSelector } from "react-redux";
-import logo from "../../../public/logo.png";
+import logo from "/logo.png";
 
 const Navbar = () => {
   const itemQuantity = useSelector((state) => state.cart.cartItems);

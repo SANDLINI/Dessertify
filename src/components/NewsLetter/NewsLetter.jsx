@@ -7,7 +7,6 @@ const NewsLetter = ({
   placeholder,
   image,
   inputVisible,
-  display,
   onchange,
 }) => {
   return (
