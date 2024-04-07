@@ -5,6 +5,7 @@ import { data } from "../../data";
 import { Box, Button, Typography } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { add } from "../../Features/CartSlice";
+import { ScrollToTop } from "../../components/ScrollToTop/ScrollToTop";
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -30,6 +31,7 @@ const ProductDetail = () => {
         gap: "10px",
       }}
     >
+      <ScrollToTop />
       <Box>
         <Box
           sx={{
