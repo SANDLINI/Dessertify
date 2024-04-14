@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import noDesserts from "/NoDesserts.jpeg";
+import noDesserts from "/NoDesserts.jpg";
 const NoItemInCart = ({ heading }) => {
   return (
     <Box

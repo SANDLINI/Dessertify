@@ -6,6 +6,7 @@ import productsHeroImage from "/productsHeroImage.jpg";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import { useSelector } from "react-redux";
+import { ScrollToTop } from "../../components/ScrollToTop/ScrollToTop";
 
 const Products = () => {
   const [products, setProducts] = useState(data);
@@ -67,6 +68,7 @@ const Products = () => {
 
   return (
     <Box sx={{ width: "100%" }}>
+      <ScrollToTop />
       <Box>
         <NewsLetter
           heading="Search for your favorite desserts..."
