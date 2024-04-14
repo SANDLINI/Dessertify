@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { AppBar, Typography, Box } from "@mui/material";
 import Toolbar from "@mui/material/Toolbar";
 import { useSelector } from "react-redux";
-import logo from '../../../public/logo.jpg'
+import logo from '/logo.jpg'
 
 const Navbar = () => {
   const itemQuantity = useSelector((state) => state.cart.cartItems);
