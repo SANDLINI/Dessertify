@@ -16,4 +16,4 @@ https://dessertify.netlify.app
 - Rich Ui
 - Detailed Description
 
-<img src = "/HomePage.jpg" />
+<img src = "./public/HomePage.jpg" />
